@@ -18,7 +18,7 @@ if uploaded_file is not None:
     image = Image.open(uploaded_file).convert('L')  # Convertir a blanco y negro
     image = image.resize((28, 28))  # Redimensionar la imagen
     img_array = np.array(image)  # Convertir la imagen a un array
-    img_array = img_array / 255.0 - 0.5  # Normalizar la imagen a -0.5 a 0.5
+    img_array = img_array / 255.0# Normalizar la imagen a -0.5 a 0.5
 
     # Reshape: 1 imagen, 28x28 dimensiones, 1 canal (blanco y negro)
     img_array = img_array.reshape(1, 28, 28, 1)
