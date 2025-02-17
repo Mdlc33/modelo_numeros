@@ -21,8 +21,8 @@ if uploaded_file is not None:
         img_array = np.array(image)  # Convertir la imagen a un array
         img_array = img_array / 255.0  # Normalizar la imagen
 
-        # Reshape: 1 imagen, 28x28 dimensiones, 1 canal (blanco y negro)
-        img_array = img_array.reshape(1, 28, 28, 1)
+        # Aplanar la imagen: 1 imagen, 784 dimensiones
+        img_array = img_array.reshape(1, 784)
 
         # Mostrar la imagen subida
         st.image(image, caption='Imagen subida', use_column_width=True)
