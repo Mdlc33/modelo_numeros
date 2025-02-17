@@ -4,7 +4,7 @@ from PIL import Image
 import numpy as np
 
 # Cargar el modelo
-model = load_model('numeros.keras')
+model = load_model('modelMNIST.h5')
 
 # Crear interfaz de usuario
 st.title('Clasificador de dígitos MNIST')
