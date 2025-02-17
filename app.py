@@ -31,7 +31,7 @@ if uploaded_file is not None:
         prediction = model.predict(img_array)
 
         # Clases para los dígitos del 0 al 9
-        classes = [str(i) for i in range(10)]
+        classes = [0,1,2,3,4,5,6,7,8,9]
 
         st.write('Predicción:', classes[np.argmax(prediction)])
 
